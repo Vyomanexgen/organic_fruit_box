@@ -52,7 +52,7 @@ const Contact = () => {
               <h3>Chat with us on WhatsApp</h3>
               <p>Get instant answers to your questions and personalized recommendations</p>
               <a 
-                href="https://wa.me/message/4NWB5FRP3RIZI1" 
+                href="https://wa.me/919912569025?text=Hello%2C%20Organic%20Fruit%20Box%2C%20I%27d%20like%20to%20know%20more%20about%20your%20services%20and%20plans.%20Please%20guide%20me%20with%20the%20details.%20" 
                 className="btn-whatsapp" 
                 target="_blank" 
                 rel="noopener noreferrer"

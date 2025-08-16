@@ -22,12 +22,12 @@ const Menu = () => {
                         <li>Kiwi</li>
                         <li>Pomegranate</li>
                         <li>Dragon fruit</li>
-                        <li>Black grapes</li>
-                        <li>green grapes</li>
-                        <li>watermelon</li>
+                        <li>Black Grapes</li>
+                        <li>Green Grapes</li>
+                        <li>Watermelon</li>
                         <li>Muskmelon</li>
-                        <li>orange</li>
-                        <li>guava</li>
+                        <li>Orange</li>
+                        <li>Guava</li>
                     </ul>
                 </div>
                 <div className="menu-type">
@@ -39,10 +39,10 @@ const Menu = () => {
                     </div>
                     <ul className="veggis-and-sprouts menu-list">
                         <li>Whole</li>
-                        <li>green moong</li>
-                        <li>beans</li>
-                        <li>Green gram</li>
-                        <li>Moong dal</li>
+                        <li>Green Moong</li>
+                        <li>Beans</li>
+                        <li>Green Gram</li>
+                        <li>Moong Dal</li>
                         <li>Keera</li>
                         <li>Carrot</li>
                         <li>Beetroot</li>

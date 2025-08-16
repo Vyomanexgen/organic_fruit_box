@@ -20,7 +20,7 @@ export default function Footer() {
             Healthy living made simple.
           </p>
           <div className="social-icons">
-            <a href="https://wa.me/message/4NWB5FRP3RIZI1"><FaWhatsapp /></a>
+            <a href="https://wa.me/919912569025?text=Hello%2C%20Organic%20Fruit%20Box%2C%20I%27d%20like%20to%20know%20more%20about%20your%20services%20and%20plans.%20Please%20guide%20me%20with%20the%20details.%20"><FaWhatsapp /></a>
             <a href="https://www.instagram.com/organic_fruitbox?utm_source=qr&igsh=ZWs2YjhvOG96czEx"><FaInstagram /></a>
           </div>
         </div>
