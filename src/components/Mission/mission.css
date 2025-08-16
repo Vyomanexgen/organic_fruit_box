@@ -1,0 +1,132 @@
+.mission-container{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width:96%;
+    height:45vh;
+    background:linear-gradient(to right, rgb(145, 239, 145), rgb(220, 228, 217));
+    margin-left: 1.8rem;
+    border-radius:1rem;
+    gap:2rem;
+}
+
+
+.headline-for-mission{
+    font-size:2.3rem;
+}
+
+.mission-container p{
+  width:60%;
+  font-size: 1.1rem;
+  text-align: center;
+}
+
+.consumed-counts-container{
+    width:60%;
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.customers{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:0.6rem;
+}
+
+
+.customers span {
+    font-weight: 700;
+    font-size: 1.5rem;
+    color: green;
+}
+
+.customers .plus-icon {
+    width: 1rem;
+    height: 0.8rem;
+    color: green;
+}
+
+
+
+@media screen and (max-width: 1024px) {
+  .mission-container {
+    height: auto;
+    padding: 2rem 1rem;
+  }
+
+  .mission-container p {
+    width: 80%;
+    font-size: 1rem;
+  }
+
+  .headline-for-mission {
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  .consumed-counts-container {
+    width: 80%;
+  }
+}
+
+
+@media screen and (max-width: 768px) {
+  .mission-container {
+    gap: 1.5rem;
+    padding: 1.5rem;
+    width:86%;
+  }
+
+  .headline-for-mission {
+    font-size: 1.7rem;
+  }
+
+  .mission-container p {
+    width: 90%;
+    font-size: 0.95rem;
+  }
+
+  .consumed-counts-container {
+    flex-direction: column;
+    gap: 1.2rem;
+    width: 100%;
+  }
+
+  .customers span {
+    font-size: 1.3rem;
+  }
+}
+
+
+@media screen and (max-width: 480px) {
+  .mission-container {
+    margin-left: 0.5rem;
+    padding: 1rem;
+    gap: 1rem;
+    border-radius: 0.8rem;
+    width:92%;
+  }
+
+  .headline-for-mission {
+    font-size: 1.4rem;
+    text-align: center;
+  }
+
+  .mission-container p {
+    width: 100%;
+    font-size: 0.9rem;
+    text-align: justify;
+  }
+
+  .consumed-counts-container {
+    gap: 1rem;
+  }
+
+  .customers span {
+    font-size: 1.1rem;
+  }
+}
