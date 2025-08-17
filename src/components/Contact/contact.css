@@ -56,10 +56,37 @@
   margin-top: 2rem;
 }
 
-.contact-form .input-container {
+.contact-form .input-container,
+.contact-form .input-container-dropdown {
   display: flex;
   flex-direction: column;
-  width: 47%;
+  width: 95%;
+  gap: 1rem;
+}
+
+.contact-form input {
+  width: 100%;
+  padding: 0.6rem;
+  border-radius: 0.2rem;
+  border: none;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  font-size: 1rem;
+}
+
+.contact-form select {
+  width: 100%;
+  padding: 0.6rem;
+  border-radius: 0.2rem;
+  border: none;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  font-size: 1rem;
+}
+
+/*
+.contact-form .input-container-dropdown {
+  display: flex;
+  flex-direction: column;
+  width: 45.5%;
   gap: 1rem;
 }
 
@@ -78,7 +105,7 @@
    border:none;
    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 
-}
+}*/
 
 .contact-form .textarea-container {
   display: flex;
@@ -109,6 +136,7 @@
   font-size: 1rem;
   cursor: pointer;
   width: 100%;
+  margin-top: 1rem;
 }
 
 .btn-primary:hover {
@@ -178,16 +206,14 @@
 
 .btn-whatsapp:hover {
   background: #f0f0f0;
-  text-decoration: underline;
 }
 
 .doubt-clarification-box {
   background: #7fe7a5;
   display: flex;
   flex-direction: column;
-  height: 32vh;
   border-radius: 0.8rem;
-
+  padding-bottom: 1rem;
 }
 
 .doubt-clarification-box h3 {
@@ -243,21 +269,15 @@
     width: 80%;
   }
 
-  .contact-form .input-container {
+  .contact-form .input-container,
+  .contact-form .input-container-dropdown {
     width: 100%;
   }
 
-  .contact-form select {
+  .contact-form select 
+  .contact-form input,
+  .contact-form textarea {
     width: 100%;
-  }
-
-  .contact-info {
-    height: auto;
-  }
-
-  .doubt-clarification-box {
-    height: auto;
-    padding-bottom: 1rem;
   }
 }
 
@@ -326,14 +346,10 @@
     width: 95%;
   }
 
-  .contact-form {
+  .contact-form 
+  .contact-information-container {
     width: 100%;
   }
-
-   .contact-information-container{
-    margin-left:-2rem;
-    width:110%;
-   }
 
   .contact-form h2 {
     font-size: 1rem;
@@ -343,20 +359,15 @@
     font-size: 0.8rem;
   }
 
-  .contact-form input {
+  .contact-form input 
+  .contact-form select {
     font-size: 0.85rem;
     padding: 0.6rem;
-    height:2vh;
   }
 
-   .contact-form select{
-    height:5vh;
-    width:89%;
-   }
-
-    .contact-form textarea{
-      height:15vh;
-      width:90%;
+  .contact-form textarea {
+      height: 15vh;
+      font-size: 0.85rem;
     }
 
   .btn-primary,
@@ -382,11 +393,8 @@
     font-size: 0.8rem;
   }
 
-  .whatsapp-box{
+  .whatsapp-box,
+  .doubt-clarification-box {
     width:100%;
-  }
-
-  .doubt-clarification-box{
-    width:110%;
   }
 }

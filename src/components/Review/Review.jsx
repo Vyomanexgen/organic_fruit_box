@@ -3,28 +3,24 @@ import "./review.css";
 
 const reviews = [
   {
-    name: "Samantha Green",
+    name: "Samantha A",
     comment: "The fruits were so fresh and juicy! Loved the eco-friendly packaging. Will definitely order again.",
     rating: 5,
-    date: "August 10, 2025",
   },
   {
-    name: "Arjun Patel",
+    name: "Arjun Reddy",
     comment: "Great quality and quick delivery. Mangoes tasted like they were straight from the farm.",
     rating: 4,
-    date: "August 12, 2025",
   },
   {
-    name: "Emily Johnson",
+    name: "Naveen Kumar",
     comment: "The fruit box was colorful and super fresh. My kids enjoyed the apples and grapes a lot!",
     rating: 5,
-    date: "August 14, 2025",
   },
   {
     name: "Karthik R",
     comment: "Affordable and organic. This is my third order and the consistency is amazing.",
     rating: 5,
-    date: "August 15, 2025",
   },
 ];
 
@@ -37,7 +33,6 @@ const Reviews = () => {
           <div key={index} className="review-card">
             <div className="review-header">
               <h3 className="review-name">{review.name}</h3>
-              <span className="review-date">{review.date}</span>
             </div>
             <p className="review-comment">{review.comment}</p>
             <div className="review-stars">

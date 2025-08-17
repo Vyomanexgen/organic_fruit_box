@@ -5,6 +5,7 @@
     display: flex;
     align-items: center;
     gap: 1rem;
+    overflow-x: hidden;
 }
 
 .hero-content {
@@ -66,7 +67,7 @@
 
 .learn-more-btn {
     background: rgb(250, 252, 250);
-    width: 35%;
+    width: 50%;
     height: 6vh;
     border: none;
     border-radius: 0.3rem;
@@ -127,8 +128,8 @@
     align-items: center;
     border-radius: 50%;
     position: absolute;
-    margin-left: 41rem;
-    margin-top: -38rem;
+    margin-left: 40rem;
+    margin-top: -39rem;
     z-index: 1
 }
 
@@ -280,11 +281,9 @@
         height: auto;
     }
 
-
     .link-btn {
         width: 70%
     }
-
 
     .leaf-icon-container {
         width: 40px;
@@ -300,7 +299,8 @@
         font-size: 0.9rem;
         bottom: -30%;
         left: 0%;
-        margin-top: 1rem;
+        margin-top: -3.3rem;
+        margin-left: -17.3rem;
         position: relative;
     }
 

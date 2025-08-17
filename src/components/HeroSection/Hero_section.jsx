@@ -1,4 +1,4 @@
-import organicFruitImg from '../../assets/unnamed[1].png';
+import organicFruitImg from '../../assets/Hero.png';
 import "./hero_section.css";
 import { TiArrowRight } from "react-icons/ti";
 import { LuLeaf } from "react-icons/lu";
@@ -27,7 +27,9 @@ const Hero_section = () => {
                             >Start Your Subscription <TiArrowRight className="right-arrow" />
                             </button>
                         </Link>
-                        <button className="learn-more-btn">Learn More</button>
+                        <Link to="services" className="link-btn" smooth={true} duration={500} offset={-100}>
+                            <button className="learn-more-btn">Learn More</button>
+                        </Link>
                     </div>
                     <div className="hero-icons">
                         <div><LuLeaf className="hero-icon leaf" /> <span>100% Organic</span></div>
