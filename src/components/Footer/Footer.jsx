@@ -20,8 +20,8 @@ export default function Footer() {
             Healthy living made simple.
           </p>
           <div className="social-icons">
-            <a href="https://wa.me/919912569025?text=Hello%2C%20Organic%20Fruit%20Box%2C%20I%27d%20like%20to%20know%20more%20about%20your%20services%20and%20plans.%20Please%20guide%20me%20with%20the%20details.%20"><FaWhatsapp /></a>
-            <a href="https://www.instagram.com/organic_fruitbox?utm_source=qr&igsh=ZWs2YjhvOG96czEx"><FaInstagram /></a>
+            <a href="https://wa.me/919912569025?text=Hello%2C%20Organic%20Fruit%20Box%2C%20I%27d%20like%20to%20know%20more%20about%20your%20services%20and%20plans.%20Please%20guide%20me%20with%20the%20details.%20" target="_blank"><FaWhatsapp /></a>
+            <a href="https://www.instagram.com/organic_fruitbox?utm_source=qr&igsh=ZWs2YjhvOG96czEx" target="_blank"><FaInstagram /></a>
           </div>
         </div>
 
@@ -40,10 +40,10 @@ export default function Footer() {
         <div className="footer-col">
           <h4>Support</h4>
           <ul>
-            <li><a href="https://wa.me/919912569025?text=Hello%20👋%2C%20I%20have%20a%20question%20regarding%20Organic%20Fruit%20Box.%20Could%20you%20please%20help%20me%20with%20more%20details%3F">FAQ</a></li>
-            <li><a href="https://wa.me/919912569025?text=Hello%20👋%2C%20I%20would%20like%20to%20know%20about%20the%20delivery%20details%20for%20Organic%20Fruit%20Box.%20Can%20you%20please%20share%20the%20information%3F">Delivery Info</a></li>
-            <li><a href="https://wa.me/919912569025?text=Hello%20👋%2C%20I%20would%20like%20to%20know%20about%20the%20return%20and%20refund%20policy%20for%20Organic%20Fruit%20Box.%20Could%20you%20please%20share%20the%20details%3F">Return Policy</a></li>
-            <li><a href="https://wa.me/919912569025?text=Hello%20👋%2C%20I%20would%20like%20to%20know%20about%20the%20privacy%20policy%20of%20Organic%20Fruit%20Box.%20Could%20you%20please%20share%20the%20details%3F">Privacy Policy</a></li>
+            <li><a href="https://wa.me/919912569025?text=Hello%20👋%2C%20I%20have%20a%20question%20regarding%20Organic%20Fruit%20Box%20Plans.%20Could%20you%20please%20help%20me%20with%20more%20details%3F" target="_blank">FAQ</a></li>
+            <li><a href="https://wa.me/919912569025?text=Hello%20👋%2C%20I%20would%20like%20to%20know%20about%20the%20delivery%20details%20for%20Organic%20Fruit%20Box.%20Can%20you%20please%20share%20the%20information%3F" target="_blank">Delivery Info</a></li>
+            <li><a href="https://wa.me/919912569025?text=Hello%20👋%2C%20I%20would%20like%20to%20know%20about%20the%20return%20and%20refund%20policy%20for%20Organic%20Fruit%20Box.%20Could%20you%20please%20share%20the%20details%3F" target="_blank">Return Policy</a></li>
+            <li><a href="https://wa.me/919912569025?text=Hello%20👋%2C%20I%20would%20like%20to%20know%20about%20the%20privacy%20policy%20of%20Organic%20Fruit%20Box.%20Could%20you%20please%20share%20the%20details%3F" target="_blank">Privacy Policy</a></li>
           </ul>
         </div>
 
