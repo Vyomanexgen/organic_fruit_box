@@ -30,7 +30,8 @@
 
 .menu-type {
   width: 30%;
-  min-height: 55vh;
+  height: auto;
+  min-height: 57vh;
   padding-bottom: 4rem;
   display: flex;
   flex-direction: column;

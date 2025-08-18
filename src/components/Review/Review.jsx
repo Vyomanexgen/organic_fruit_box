@@ -1,5 +1,7 @@
 import React from "react";
 import "./review.css";
+import { Star } from "lucide-react";
+
 
 const reviews = [
   {
@@ -36,11 +38,15 @@ const Reviews = () => {
             </div>
             <p className="review-comment">{review.comment}</p>
             <div className="review-stars">
-              {Array(review.rating)
-                .fill("⭐")
-                .map((star, i) => (
-                  <span key={i}>{star}</span>
-                ))}
+              {Array(5).fill(0).map((_, i) => (
+                <Star 
+                  key={i} 
+                  size={18} 
+                  fill={i < review.rating ? "#facc15" : "none"} 
+                  stroke={i < review.rating ? "#facc15" : "#d1d5db"} 
+                  style={{ marginRight: "2px" }}
+                />
+              ))}
             </div>
           </div>
         ))}
