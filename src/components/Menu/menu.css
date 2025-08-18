@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 .menu-container {
   display: flex;
   flex-direction: column;
@@ -5,7 +9,8 @@
   justify-content: center;
   gap: 3rem;
   width: 100%;
-  height: 100vh;
+  height: auto;
+  min-height: 85vh;
   background: linear-gradient(to top, #def3df 20%, #ffffff 80%);
 }
 
@@ -16,128 +21,145 @@
 
 .types-of-menu {
   display: flex;
+  flex-wrap: wrap;
   width: 100%;
-  height: 65vh;
   gap: 2rem;
-  align-items: center;
   justify-content: center;
+  align-items: flex-start;
 }
 
 .menu-type {
-  box-shadow: 0px 5px 16px rgba(0, 0, 0, 0.08);
-  border-radius: 10px;
   width: 30%;
-  height: 100%;
+  min-height: 55vh;
+  padding-bottom: 4rem;
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: flex-start;
   gap: 1rem;
   background: white;
-
+  border-radius: 10px;
+  box-shadow: 0px 5px 16px rgba(0, 0, 0, 0.08);
+  position: relative;
+  transition: border 0.3s ease;
 }
 
 .menu-type:hover {
-  border: rgb(6, 255, 6) solid 3px;
-}
-
-.menu-list {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1rem;
-  margin-left: 0rem;
-  justify-content: center;
-
-}
-
-.menu-list li {
-  list-style-type: none;
-  font-size: 1.2rem;
-  font-weight: 500;
-  width: 40%;
-}
-
-.menu-title {
-  font-size: 1.5rem;
-  color: black;
-  font-weight: 700;
-
+  border: 3px solid rgb(6, 255, 6);
 }
 
 .menu-img-container {
   width: 130px;
   height: 130px;
+  margin-top: 1rem;
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: 1rem;
-
 }
 
 .menu-img-container img {
-  width: 130px;
-  height: 130px;
+  width: 100%;
+  height: 100%;
   object-fit: cover;
   border-radius: 50%;
 }
 
+.menu-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: black;
+}
 
+.menu-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  width: 100%;
+  margin-right: 3rem;
+}
+
+.menu-list li {
+  list-style: none;
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+.btn-wrapper {
+  position: absolute;
+  bottom: 1.5rem;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 1rem;
+  width: 85%;
+  justify-content: center;
+}
+
+.box-btn {
+  width: 100%;
+  padding: 0.7rem 1.5rem;
+  font-size: 1rem;
+  font-weight: 600;
+  color: white;
+  background-color: #28a745;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.box-btn:hover {
+  background-color: #218838;
+  transform: translateY(-2px);
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* -------- Responsive -------- */
 
 @media (max-width: 1024px) {
   .menu-container {
+    padding: 4rem 1rem;
     height: auto;
-    padding: 3rem 1rem;
+    min-height: 100vh;
   }
-
-  .types-of-menu {
-    flex-wrap: wrap;
-    height: auto;
-    gap: 2rem;
-  }
-
   .menu-type {
     width: 45%;
     height: auto;
-    padding-bottom: 1rem;
+    min-height: 60vh;
   }
 
+  .menu-list {
+    margin-right: 2rem;
+  }
   .menu-list li {
     font-size: 1.1rem;
-    width: 45%;
   }
 }
 
-
-@media (max-width: 700px) {
-  .headline-for-menu h1 {
-    font-size: 1.8rem;
-    text-align: center;
-  }
-
+@media (max-width: 780px) {
   .types-of-menu {
     flex-direction: column;
-    align-items: center;
     gap: 2rem;
   }
 
   .menu-type {
-    width: 90%;
-    height: auto;
+    width: 100%;
+    min-height: auto;
   }
 
   .menu-title {
     font-size: 1.3rem;
   }
 
-  .menu-list {
-    gap: 0.8rem;
-    align-items: center;
-    justify-content: center;
-    width: 60%;
-  }
-
   .menu-list li {
     font-size: 1rem;
-    width: 40%;
+  }
+
+  .menu-list {
+    align-items: center;
+    margin-right: 2.5rem;
+    margin-bottom: 2rem;
   }
 
   .menu-img-container {
@@ -145,21 +167,18 @@
     height: 100px;
   }
 
-  .menu-img-container img {
-    width: 100px;
-    height: 100px;
+  .btn-wrapper {
+    width: 95%;
   }
 }
 
-
 @media (max-width: 480px) {
-  .headline-for-menu h1 {
+  .headline-for-menu {
     font-size: 1.5rem;
   }
 
   .menu-type {
-    width: 90%;
-    padding: 1rem;
+    padding-bottom: 3rem;
   }
 
   .menu-title {
@@ -171,22 +190,19 @@
     width: 45%;
   }
 
-  .menu-list {
-    width: 85%;
-  }
-
   .menu-img-container {
     width: 80px;
     height: 80px;
   }
 
-  .menu-img-container img {
-    width: 80px;
-    height: 80px;
+  .btn-wrapper {
+    gap: 0.8rem;
+    width: 80%;
+    bottom: 1rem;
   }
 
-  .menu-container {
-    width: 100vw;
-    margin-left: -0.5rem;
+  .box-btn {
+    font-size: 0.95rem;
+    padding: 0.6rem 1.2rem;
   }
 }

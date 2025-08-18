@@ -34,7 +34,7 @@ const Contact = () => {
 - Plan: ${plan}
 - Message: ${message}`;
 
-    // WhatsApp number (with country code, no +)
+    
     const whatsappNumber = "919912569025"; // change if needed
 
     const url = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(text)}`;

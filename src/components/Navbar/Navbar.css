@@ -1,17 +1,19 @@
+/* ========== NAVBAR ========== */
 .navbar {
   background-color: white;
   position: sticky;
-  top: 0px;
-  padding: 0.2rem;
+  top: 0;
   z-index: 100;
-  opacity: 0.9;
-  margin-top: -8px;
+  opacity: 0.95;
+  height: 3.5rem;
+  line-height: 3.5rem;
 }
 
 .navbar-container {
   display: flex;
-  justify-content: flex-start;
+  justify-content: space-between;
   align-items: center;
+  height: 100%;
   max-width: 100%;
   box-shadow: 0px 5px 16px rgba(0, 0, 0, 0.08);
 }
@@ -42,6 +44,9 @@
   margin-left: auto;
 }
 
+.navbar-links li {
+  font-size: 1.1rem;
+}
 
 .style-link {
   text-decoration: none;
@@ -53,10 +58,6 @@
   color: rgb(1, 100, 7);
 }
 
-.navbar-links li {
-  font-size: 1.1rem;
-}
-
 .navbar-btns {
   display: flex;
   gap: 1rem;
@@ -64,21 +65,22 @@
   align-items: center;
 }
 
+/* ========== SIDEBAR ========== */
 .slide-bar-container {
   display: flex;
   flex-direction: column;
-  gap: 4rem;
+  gap: 2rem;
   background: #000402;
-  width: 20%;
-  position:fixed;
-  top:2.7rem;
-  height:100vh;
-  padding-top:3rem;
-  z-index:3;
-  margin-left:0px;
-  transition:1.2s;
-  display:none;
-  opacity:0.8;    
+  width: 30%;
+  position: fixed;
+  padding-top: 1rem;
+  margin-top: auto;
+  top: 3.2rem;
+  height: 100vh;
+  z-index: 200;
+  left: -100%;                /* hidden by default */
+  transition: left 0.3s ease-in-out;
+  opacity: 1;                 /* keep text clear */
 }
 
 .slide-bar-container li {
@@ -87,12 +89,18 @@
   color: white;
 }
 
-.trible-bar{
-  width:1.5rem;
-  height:1.5rem;
-  display:none;
+.trible-bar {
+  width: 1.5rem;
+  height: 1.5rem;
+  display: none;
+  cursor: pointer;
+  margin: 0;
+  flex-shrink: 0;
 }
 
+/* ========== MEDIA QUERIES ========== */
+
+/* Tablets & smaller laptops */
 @media (max-width: 1024px) {
   .navbar-links {
     gap: 1rem;
@@ -105,24 +113,21 @@
   .navbar-links li {
     font-size: 1rem;
   }
-
 }
 
-
-@media (max-width: 700px) {
+/* Mobile */
+@media (max-width: 780px) {
   .navbar-links {
     display: none; 
   }
 
   .trible-bar {
     display: block;
-    cursor: pointer;
   }
 
   .slide-bar-container {
-    display: flex ;
-    width: 30%; 
-    margin-top:0.3rem;
+    width: 30%;       /* bigger for mobile */
+    top: 3.5rem;
   }
 
   .slide-bar-container li {
@@ -132,34 +137,23 @@
   }
 
   .navbar-logo {
-    margin-left: 0.2rem;
+    margin-left: 0.5rem;
   }
 
   .navbar-btns {
     gap: 0.5rem;
     margin-right: 1rem;
   }
-  
-  .navbar,
-  .navbar-container{
-   flex:1.4rem;
-   width:102%;
-   height:6vh;
-   position:fixed;
-   margin-left:-0.3rem;
-   top:0;
-  }
-  
 }
 
+/* Small phones */
 @media (max-width: 480px) {
   .navbar-logo span {
     font-size: 0.8rem;
   }
 
   .slide-bar-container {
-    width: 30%; 
-    left: -100%;
+    width: 30%;     /* even wider on tiny screens */
   }
 
   .slide-bar-container li {
@@ -167,15 +161,10 @@
     padding-left: 1rem;
   }
 
-  .navbar,
-  .navbar-container{
-   flex:1.4rem;
-   width:105%;
-  }
   .navbar-logo img {
     width: 25px;
     height: 25px;
     border-radius: 10px;
-    margin-right:5px;
+    margin-right: 5px;
   }
 }

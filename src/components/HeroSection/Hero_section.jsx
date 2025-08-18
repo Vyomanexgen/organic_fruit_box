@@ -12,12 +12,9 @@ const Hero_section = () => {
         <div>
             <section className="hero-section">
                 <div className="hero-content">
-                    <h1 style={{ display: "flex", gap: "1rem" }}>
-                        Fresh
-                        <span style={{ color: "green" }}>Organic</span>
-                        Fruits &
+                    <h1 style={{ display: "flex", gap: "1rem", marginBottom: "1rem" }}>
+                        Fresh <span style={{ color: "green" }}>Organic</span> Fruits & Bowls
                     </h1>
-                    <h1>Bowls</h1>
                     <h1 className="delivery">Delivered Daily</h1>
                     <p>Nourish your body with our carefully curated selection of orgain fruits and healthy salad bowls.
                         Fresh, local, and delivered right to your doorstep.</p>

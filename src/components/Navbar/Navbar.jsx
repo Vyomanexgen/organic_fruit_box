@@ -24,18 +24,13 @@ const Navbar = ({ slideBar, setSlideBar }) => {
           </ul>
 
           <div className="navbar-btns">
-            <div className="slide-bar"
-              onClick={() => setSlideBar(false)}
-              style={{ display: !slideBar ? "none" : "block" }}
-            ><IoReorderThreeOutline className="trible-bar"/></div>
-            <div className="hide-slide-bar"
-              onClick={() => setSlideBar(true)}
-              style={{ display: slideBar ? "none" : "block" }}>
-              <FaXmark className="x-mark"/></div>
+            <div className="slide-bar" onClick={() => setSlideBar(!slideBar)}>
+              {slideBar ? <IoReorderThreeOutline className="trible-bar"/> : <FaXmark className="x-mark"/>}
+            </div>
           </div>
         </div>
       </nav>
-      <ul className="slide-bar-container" style={{ left: !slideBar ? "0px" : "-60%"}}>
+      <ul className="slide-bar-container" style={{ left: !slideBar ? "0" : "-100%"}}>
         <Link to="home" className="style-link" smooth={true} duration={500} offset={-50}><li>Home</li></Link>
         <Link to="menu" className="style-link" smooth={true} duration={500}><li>Menu</li></Link>
         <Link to="priceBox" className="style-link" smooth={true} duration={500} offset={-80}><li>Plans</li></Link>

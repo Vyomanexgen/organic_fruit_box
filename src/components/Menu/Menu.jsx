@@ -29,6 +29,10 @@ const Menu = () => {
                         <li>Orange</li>
                         <li>Guava</li>
                     </ul>
+                    <div className="btn-wrapper">
+                        <button className="box-btn">Medium Box</button>
+                        <button className="box-btn">Large Box</button>
+                    </div>
                 </div>
                 <div className="menu-type">
                      <div className="menu-img-container">
@@ -47,6 +51,10 @@ const Menu = () => {
                         <li>Carrot</li>
                         <li>Beetroot</li>
                     </ul>
+                    <div className="btn-wrapper">
+                        <button className="box-btn">Medium Box</button>
+                        <button className="box-btn">Large Box</button>
+                    </div>
                 </div>
                 <div className=" menu-type">
                      <div className="menu-img-container">
@@ -63,6 +71,10 @@ const Menu = () => {
                         <li>Pistachios</li>
                         <li>Cashews</li>
                     </ul>
+                    <div className="btn-wrapper">
+                        <button className="box-btn">Medium Box</button>
+                        <button className="box-btn">Large Box</button>
+                    </div>
                 </div>
             </div>
         </div>

@@ -4,7 +4,7 @@
   text-align: center;
   padding: 3rem 1.5rem;
   border-radius: 12px;
-  margin-top:4rem;
+  margin-top: 4rem;
 }
 
 .heading {
@@ -64,17 +64,46 @@
   color: #00a651;
 }
 
+@media (max-width: 1024px) {
+  .price-card {
+    width: 200px;
+    height: auto;
+  }
+  .price-card h3 {
+    font-size: 1.1rem;
+  }
+  .price {
+    font-size: 1.3rem;
+  }
+}
 
-
-@media (max-width: 700px) {
+@media (max-width: 780px) {
   .price-section{
-    margin-right:-1.8rem;
+    max-width: 100%;
+  }
+  .price-card {
+    width: 190px;
+  }
+  .price-card h3 {
+    font-size: 1rem;
+  }
+  .price {
+    font-size: 1.1rem;
   }
 }
 
 
 @media (max-width: 480px) {
   .price-section{
-    margin-right:-1.5rem;
+    max-width: 100%;
+  }
+  .price-card {
+    width: 140px;
+  }
+  .price-card h3 {
+    font-size: 1rem;
+  }
+  .price {
+    font-size: 1rem;
   }
 }
