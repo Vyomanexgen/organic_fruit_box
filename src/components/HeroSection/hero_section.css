@@ -82,7 +82,6 @@
     font-size: 0.9rem;
 }
 
-/* ✅ merged hero-icon + leaf */
 .hero-icon,
 .hero-icons .leaf {
     color: #06d14a;
@@ -162,15 +161,10 @@
     color: green;
 }
 
-
-/* ===================== */
-/* RESPONSIVE QUERIES    */
-/* ===================== */
-
 @media (max-width: 1024px) {
     .hero-section {
         flex-direction: column;
-        height: auto; /* ✅ removed unused full-height */
+        height: auto;
         padding: 2rem 1rem;
         text-align: center;
     }
@@ -208,7 +202,6 @@
 }
 
 @media (max-width: 780px) {
-    /* ✅ merged h1 + delivery */
     .hero-content h1,
     .hero-content .delivery {
         font-size: 2.2rem;
@@ -258,7 +251,6 @@
 }
 
 @media (max-width: 480px) {
-    /* ✅ merged again */
     .hero-content h1,
     .hero-content .delivery {
         font-size: 1.8rem;

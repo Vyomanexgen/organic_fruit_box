@@ -116,8 +116,6 @@
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-/* -------- Responsive -------- */
-
 @media (max-width: 1024px) {
   .menu-container {
     padding: 4rem 1rem;

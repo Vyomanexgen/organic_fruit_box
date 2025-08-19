@@ -35,8 +35,6 @@ const Hero_section = () => {
                         <div><TbTruckDelivery className="hero-icon delivery" /> <span>Fresh Daily</span></div>
                     </div>
                 </div>
-
-                {/* ✅ Only single clean image now */}
                 <div className="hero-image">
                     <div className="hero-img-container">
                         <img src={organicFruitImg} alt="Fresh Organic Fruits" />

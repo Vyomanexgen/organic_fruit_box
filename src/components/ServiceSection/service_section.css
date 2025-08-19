@@ -32,8 +32,8 @@
 }
 
 .feature-cards-container {
-    display: grid; /* changed */
-    grid-template-columns: repeat(3, 1fr); /* 3 in a row on desktops */
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
     gap: 2rem;
     width: 100%;
     align-items: stretch;
@@ -86,7 +86,6 @@
     margin-top: 1rem;
 }
 
-/* brand green text */
 .brand-green {
     color: #00a651;
 }
@@ -105,7 +104,7 @@
   }
 
   .feature-cards-container {
-    grid-template-columns: repeat(2, 1fr); /* 2 per row on tablets */
+    grid-template-columns: repeat(2, 1fr);
   }
 
   .feature-card {
@@ -133,7 +132,7 @@
   }
 
   .feature-cards-container {
-    grid-template-columns: 1fr; /* 1 per row on mobiles */
+    grid-template-columns: 1fr;
     gap: 1.5rem;
   }
 

@@ -9,7 +9,7 @@
 
 .footer-container {
   display: grid;
-  grid-template-columns: repeat(4, 1fr); /* 4 columns on desktop */
+  grid-template-columns: repeat(4, 1fr);
   gap: 2rem;
   max-width: 1200px;
   margin: auto;
@@ -91,17 +91,15 @@
   color: #94a3b8;
 }
 
-/* Tablet - 2 columns */
 @media (max-width: 1024px) {
   .footer-container {
     grid-template-columns: repeat(2, 1fr);
   }
 }
 
-/* Mobile - 1 centered column */
 @media (max-width: 780px) {
   .footer-col {
-    max-width: 400px; /* keeps each column neatly centered */
+    max-width: 400px;
     width: 100%;
   }
 
@@ -115,11 +113,11 @@
 @media (max-width: 480px) {
   .footer-container {
     grid-template-columns: 1fr;
-    text-align: center; /* center text */
-    justify-items: center; /* center grid items */
+    text-align: center;
+    justify-items: center;
   }
   
   .footer-logo {
-    justify-content: center; /* center logo */
+    justify-content: center;
   }
 }
